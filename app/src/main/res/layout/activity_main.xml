@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginRight="20dp"
+            android:text="Score"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="0"
+            android:textStyle="bold"
+            android:id="@+id/count"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="/" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="0"
+            android:textStyle="bold"
+            android:id="@+id/countw"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp"
+            android:text="Overs"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginLeft="5dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:id="@+id/counto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="."
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="0"
+                android:textStyle="bold"
+                android:id="@+id/countr"/>
+
+</LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_weight="1"
+        android:id="@+id/b1"
+        android:background="@drawable/circle"
+        android:onClick="single"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:layout_weight="1"
+        android:id="@+id/b2"
+        android:background="@drawable/circle"
+        android:onClick="doub"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/b3"
+        android:layout_weight="1"
+        android:background="@drawable/circle"
+        android:onClick="three"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boundary"
+            android:text="4"
+            android:id="@+id/b4"
+            android:onClick="four"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:background="@drawable/boundary"
+            android:layout_weight="1"
+            android:id="@+id/b6"
+            android:onClick="six"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Dot"
+                android:id="@+id/b0"
+                android:background="@drawable/circle"
+                android:layout_weight="1"
+                android:onClick="dot"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Wide"
+                android:id="@+id/bwd"
+                android:layout_weight="1"
+                android:background="@drawable/wide"
+                android:onClick="wide"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="No-Ball"
+                android:layout_weight="1"
+                android:id="@+id/bnb"
+                android:background="@drawable/noball"
+                android:onClick="noball"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Wicket"
+                android:id="@+id/bw"
+                android:layout_weight="1"
+                android:background="@drawable/wicket"
+                android:onClick="wicket" />
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Summary"
+            android:id="@+id/board"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+    </ScrollView>
+
+
+
+</LinearLayout>
